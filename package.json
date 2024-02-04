@@ -5,14 +5,13 @@
   "type": "module",
   "files": [
     "dist",
-    "src/types.ts",
-    "index.d.ts"
+    "types"
   ],
   "main": "./dist/postcss-rtlcss-extra.umd.cjs",
   "module": "./dist/postcss-rtlcss-extra.js",
-  "types": "./index.d.ts",
+  "types": "./types.d.ts",
   "exports": {
-    "types": "./index.d.ts",
+    "types": "./types/types.d.ts",
     "import": "./dist/postcss-rtlcss-extra.js",
     "require": "./dist/postcss-rtlcss-extra.umd.cjs"
   },

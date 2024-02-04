@@ -1,13 +1,13 @@
-declare enum Mode {
+export enum Mode {
   combined = "combined",
   override = "override",
   diff = "diff",
 }
-declare enum Source {
+export enum Source {
   ltr = "ltr",
   rtl = "rtl",
 }
-declare enum Autorename {
+export enum Autorename {
   disabled = "disabled",
   flexible = "flexible",
   strict = "strict",
@@ -16,15 +16,17 @@ type ModeValues = keyof typeof Mode;
 type SourceValues = keyof typeof Source;
 type AutorenameValues = keyof typeof Autorename;
 type strings = string | string[];
-interface PluginStringMap {
+export interface PluginStringMap {
   name?: string;
   search: strings;
   replace: strings;
 }
-type PrefixSelectorTransformer = (
+
+export type PrefixSelectorTransformer = (
   prefix: string,
   selector: string,
 ) => string | void;
+
 export interface RtlcssOptions {
   mode?: ModeValues;
   ltrPrefix?: strings;
