@@ -13,9 +13,9 @@
     "moduleResolution": "Bundler",
     "allowImportingTsExtensions": true,
     "resolveJsonModule": true,
-    "isolatedModules": true,
     "emitDeclarationOnly": true,
     "declaration": true,
+    "outFile": "index.d.ts",
     /* Linting */
     "strict": true,
     "noUnusedLocals": true,
