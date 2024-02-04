@@ -25,7 +25,7 @@ type PrefixSelectorTransformer = (
   prefix: string,
   selector: string,
 ) => string | void;
-export interface RTLCSSModuleOptions {
+export interface RtlcssOptions {
   mode?: ModeValues;
   ltrPrefix?: strings;
   rtlPrefix?: strings;

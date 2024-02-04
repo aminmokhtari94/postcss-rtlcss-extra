@@ -1,7 +1,7 @@
 import postcssRTLCSS from "postcss-rtlcss";
-import { RTLCSSModuleOptions } from "./types";
+import { RtlcssOptions } from "./types";
 
-export default (options: RTLCSSModuleOptions) => {
+export default (options: RtlcssOptions) => {
   return (root: any, result: any) => {
     if (root) {
       if (
