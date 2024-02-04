@@ -1,28 +1,12 @@
 {
   "name": "postcss-rtlcss-extra",
   "private": false,
-  "version": "0.0.6",
+  "version": "0.0.7",
   "type": "module",
   "files": [
-    "dist",
-    "index.d.ts"
+    "src"
   ],
-  "main": "./dist/postcss-rtlcss-extra.umd.cjs",
-  "module": "./dist/postcss-rtlcss-extra.js",
-  "types": "./index.d.ts",
-  "exports": {
-    "types": "./index.d.ts",
-    "import": "./dist/postcss-rtlcss-extra.js",
-    "require": "./dist/postcss-rtlcss-extra.umd.cjs"
-  },
-  "scripts": {
-    "dev": "vite",
-    "build": "tsc && vite build"
-  },
-  "devDependencies": {
-    "typescript": "^5.3.3",
-    "vite": "^5.0.10"
-  },
+  "main": "./src/main.ts",
   "dependencies": {
     "postcss-rtlcss": "^5.1.0"
   }
