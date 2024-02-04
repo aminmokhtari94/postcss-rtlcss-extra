@@ -1,6 +1,6 @@
 import postcssRTLCSS from "postcss-rtlcss";
 import { RtlcssOptions } from "./types";
-
+export * from "./types";
 export default (options: RtlcssOptions) => {
   return (root: any, result: any) => {
     if (root) {
