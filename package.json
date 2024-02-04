@@ -1,15 +1,15 @@
 {
   "name": "postcss-rtlcss-extra",
   "private": false,
-  "version": "0.0.1",
+  "version": "0.0.2",
   "type": "module",
   "files": [
     "dist",
-    "index.d.ts"
+    "src/types.ts"
   ],
   "main": "./dist/postcss-rtlcss-extra.umd.cjs",
   "module": "./dist/postcss-rtlcss-extra.js",
-  "types": "./index.d.ts",
+  "types": "./src/types.ts",
   "exports": {
     "types": "./index.d.ts",
     "import": "./dist/postcss-rtlcss-extra.js",
