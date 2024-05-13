@@ -8,6 +8,6 @@
   ],
   "main": "./src/main.ts",
   "dependencies": {
-    "postcss-rtlcss": "^5.1.0"
+    "postcss-rtlcss": "^5.1.2"
   }
 }
