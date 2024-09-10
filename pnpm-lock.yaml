@@ -9,10 +9,20 @@ importers:
   .:
     dependencies:
       postcss-rtlcss:
-        specifier: ^5.1.2
-        version: 5.1.2(postcss@8.4.33)
+        specifier: ^5.4.0
+        version: 5.4.0(postcss@8.4.33)
+    devDependencies:
+      '@types/node':
+        specifier: ^22.5.4
+        version: 22.5.4
+      typescript:
+        specifier: ^5.6.2
+        version: 5.6.2
 
 packages:
+
+  '@types/node@22.5.4':
+    resolution: {integrity: sha512-FDuKUJQm/ju9fT/SeX/6+gBzoPzlVCzfzmGkwKvRHQVxi4BntVbyIwf6a4Xn62mrvndLiml6z/UBXIdEVjQLXg==}
 
   escalade@3.1.1:
     resolution: {integrity: sha512-k0er2gUkLf8O0zKJiAhmkTnJlTvINGv7ygDNPbeIsX/TJjGJZHuh9B2UxbsaEkmlEo9MfhrSzmhIlhRlI2GXnw==}
@@ -26,8 +36,8 @@ packages:
   picocolors@1.0.0:
     resolution: {integrity: sha512-1fygroTLlHu66zi26VoTDv8yRgm0Fccecssto+MhsZ0D/DGW2sm8E8AjW7NU5VVTRt5GxbeZ5qBuJr+HyLYkjQ==}
 
-  postcss-rtlcss@5.1.2:
-    resolution: {integrity: sha512-cmcgRoO1wL7IJyVHw0RneWI/5Oe75NLC2NLlQLsNI7hcui+yRcW4RrILfQa4FqKQRLTU4r5eF0YPi1qZpMzQpA==}
+  postcss-rtlcss@5.4.0:
+    resolution: {integrity: sha512-eoFq38PzPo5G8SRLzLenY7RZsaJuDdnKCaSZejfKNMuT/ZtApsLEU8wXrgBeOXeVwfeBwUdrZofa/bxWEbDCQA==}
     engines: {node: '>=18.0.0'}
     peerDependencies:
       postcss: ^8.4.21
@@ -36,8 +46,8 @@ packages:
     resolution: {integrity: sha512-Kkpbhhdjw2qQs2O2DGX+8m5OVqEcbB9HRBvuYM9pgrjEFUg30A9LmXNlTAUj4S9kgtGyrMbTzVjH7E+s5Re2yg==}
     engines: {node: ^10 || ^12 || >=14}
 
-  rtlcss@4.1.1:
-    resolution: {integrity: sha512-/oVHgBtnPNcggP2aVXQjSy6N1mMAfHg4GSag0QtZBlD5bdDgAHwr4pydqJGd+SUCu9260+Pjqbjwtvu7EMH1KQ==}
+  rtlcss@4.3.0:
+    resolution: {integrity: sha512-FI+pHEn7Wc4NqKXMXFM+VAYKEj/mRIcW4h24YVwVtyjI+EqGrLc2Hx/Ny0lrZ21cBWU2goLy36eqMcNj3AQJig==}
     engines: {node: '>=12.0.0'}
     hasBin: true
 
@@ -49,7 +59,19 @@ packages:
     resolution: {integrity: sha512-6fPc+R4ihwqP6N/aIv2f1gMH8lOVtWQHoqC4yK6oSDVVocumAsfCqjkXnqiYMhmMwS/mEHLp7Vehlt3ql6lEig==}
     engines: {node: '>=8'}
 
+  typescript@5.6.2:
+    resolution: {integrity: sha512-NW8ByodCSNCwZeghjN3o+JX5OFH0Ojg6sadjEKY4huZ52TqbJTJnDo5+Tw98lSy63NZvi4n+ez5m2u5d4PkZyw==}
+    engines: {node: '>=14.17'}
+    hasBin: true
+
+  undici-types@6.19.8:
+    resolution: {integrity: sha512-ve2KP6f/JnbPBFyobGHuerC9g1FYGn/F8n1LWTwNxCEzd6IfqTwUQcNXgEtmmQ6DlRrC1hrSrBnCZPokRrDHjw==}
+
 snapshots:
+
+  '@types/node@22.5.4':
+    dependencies:
+      undici-types: 6.19.8
 
   escalade@3.1.1: {}
 
@@ -57,10 +79,10 @@ snapshots:
 
   picocolors@1.0.0: {}
 
-  postcss-rtlcss@5.1.2(postcss@8.4.33):
+  postcss-rtlcss@5.4.0(postcss@8.4.33):
     dependencies:
       postcss: 8.4.33
-      rtlcss: 4.1.1
+      rtlcss: 4.3.0
 
   postcss@8.4.33:
     dependencies:
@@ -68,7 +90,7 @@ snapshots:
       picocolors: 1.0.0
       source-map-js: 1.0.2
 
-  rtlcss@4.1.1:
+  rtlcss@4.3.0:
     dependencies:
       escalade: 3.1.1
       picocolors: 1.0.0
@@ -78,3 +100,7 @@ snapshots:
   source-map-js@1.0.2: {}
 
   strip-json-comments@3.1.1: {}
+
+  typescript@5.6.2: {}
+
+  undici-types@6.19.8: {}
